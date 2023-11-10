@@ -1,0 +1,380 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+*{
+  box-sizing: border-box;
+}
+  .banner{
+    width: 100%;
+    height: 100vh;
+   
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  
+  .navbar {
+    width: 100%; /* Use 100% to ensure it spans the entire viewport width */
+    margin: 0;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000007c; /* Add your desired background color here */
+}
+
+
+  
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: #eae8e8;
+    text-transform: uppercase ;
+    width: 100%;
+  
+  }
+  .navbar ul li::after{
+    content:'';
+    height: 1px;
+    width: 0%;
+    color: #eae8e8;
+    background:#94eaf2;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+  
+  }
+  .navbar ul li:hover:after{
+    width: 100%;
+  }
+  
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    text-align: center;
+    color: #ffff;
+  
+  }
+  .content h1{
+    font-size:55px;
+    font-weight: 300;
+    font-style:initial;
+    margin-top: 80px;
+  }
+  .content p{
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight:lighter;
+    line-height: 20px;
+    color:#9aebf4;
+  
+  }
+  button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight:lighter;
+    border: 0.8px solid#f6f6f6;
+    background: transparent;
+    color: #fefefe;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  span{
+    background: #94eaf2;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  button:hover span{
+    width: 100%;
+  }
+  button:hover{
+    border: none;
+  }
+  
+  .bannner{
+    width: 100%;
+    height: 100vh;
+    background-color:#ffffff;
+    background:scroll;
+    background-position: center;
+   
+  
+  
+  
+  }
+  .New{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    gap: 30rem;
+   
+  
+  }
+  .New-img { 
+    width: 55px;
+    position:absolute;
+    padding-top: 0.05%;
+    margin-left: 1%;
+    transform: translateX(-50%);
+    transition: transform 400ms ease-in;
+   
+    float: left;
+  }
+  .New-img.appear{
+    transform: translateX(0);
+  }
+  .heading{
+    text-align:center;
+    font-size:xx-large;
+    padding-top: 14%;
+    font-weight: 500;
+   
+  
+  
+  }
+  .New-content h2{
+    text-align:left;
+    line-height: 46px;
+    color:#f0fafa;
+    font-weight:500;
+    padding-right: 10%;
+    font-size: 30px;
+    padding-left: 70%;
+    
+    
+    
+    
+  
+  
+  }
+  .New-content h3{
+    font-size: medium;
+    text-align:left;
+    padding-right: 10%;
+    padding-left: 70% ;
+    line-height: 3;
+    font-weight: lighter;
+   ;
+   
+    
+  }
+  .New-content p{
+    font-size: 14px;
+    text-align: left;
+    padding-right: 10%;
+    padding-left: 70%;
+    font-weight: 200;
+    line-height: 20px;
+    margin:2rem 0 3rem;
+  }
+  .button1{
+    width: 200px;
+    padding: 15px 0;
+    
+    
+    text-align:center;
+    font-size: small;
+    
+    margin: 40px 150px;
+    border-radius: 300px;
+    font-weight:lighter;
+    border: 1px solid#ffffff;
+    background: transparent;
+    color: #eeffff;
+    cursor: pointer;
+    position:relative;
+    overflow: hidden;
+    left: 850px;
+    
+  }
+  span{
+    background: #94eaf2;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .button1:hover span{
+    width: 100%;
+  }
+  .button1:hover{
+    border: none;
+  }
+  .Stories h2 {
+  text-align: center;
+  width: 100%;
+  color: #f1f1f1;
+  padding: 1rem;
+  background-color:#fff3f3;
+  font-size: 20px;
+  
+  }
+  
+  
+  .Stories-box:hover {
+    border-color: #9ad9f4;
+    outline: 0.3rem solid #9aebf4;
+    transform: scale(1.15);
+  }
+  
+  .Stories-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 0 5cm;
+    padding: 5rem 0;
+    box-sizing: border-box;
+  }
+  
+  .Stories-container .Stories-box {
+    flex-basis: calc(35% - 8rem);
+    padding: 1cm;
+    border-radius: 0.1rem;
+    text-align: center;
+    border: 0.08rem solid #000000;
+    min-height: 30rem;
+    min-width: 10rem;
+    transition: 0.5s ease;
+  }
+  
+  
+  .story-image {
+    max-width: 100%;
+    max-height: 100%;
+    
+    display: block;
+    margin: 30 auto;
+  }
+  
+  
+  #Shop {
+  background-color: #000000; 
+  
+    
+    
+  }
+  .shop h1{
+  margin-left: -3rem;
+  margin-right: 10rem;
+  width: 100%;
+  color: #fcf7f7;
+  padding: 3rem;
+  font-size: 30px;
+  
+  }
+  
+  .shop-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .shop-box {
+    margin-left: 55px;
+    width: 100%;
+    max-width: 290px; /* Limiting the maximum width to avoid overlapping */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    transition: transform 0.2s; /* Adding a smooth transition for the hover effect */
+    cursor: pointer;
+  }
+  
+  .shop-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .shop-box h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .shop-box p {
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  /* Hover effect */
+  .shop-box:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a slightly stronger shadow on hover */
+  }
+  
+      
+  #shop-dropdown {
+    position: relative;
+  }
+  
+  
+     
+  
+  #shop-dropdown {
+      position: relative;
+  }
+  
+  .popup-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      padding: 20px; /* Increased padding for a larger box */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added a box shadow for depth */
+      width: 50%; /* Set the width to cover half of the screen */
+      min-width: 200px; /* Set a minimum width to avoid the content being too narrow */
+      z-index: 1; /* Ensure the pop-up appears on top of other content */
+  }
+  
+  #shop-dropdown:hover .popup-content {
+      display: block;
+  }
+  
+  /* Updated styles for the pop-up content */
+  .popup-content ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      color: #336699; /* Changed font color to #336699 */
+      font-size: 16px;
+  }
+  
+  .popup-content li {
+      padding: 5px 0;
+  }
+  
+  
+  
+  
+  
+      
+  
